@@ -6,16 +6,13 @@
 
 This repository contains the official PyTorch implementation for **ProDisc-VAD**, an efficient framework for **Weakly-Supervised Video Anomaly Detection (WS-VAD)** in surveillance applications. The method addresses the label ambiguity inherent in Multiple Instance Learning (MIL) for WS-VAD, which stems from the sparsity of anomalous events and hinders the learning of discriminative features when only video-level labels are available.
 
-## Abstract (from paper)
+## Abstract 
 
 Weakly-supervised video anomaly detection (WS-VAD) using Multiple Instance Learning (MIL) suffers from label ambiguity, hindering discriminative feature learning. We propose ProDisc-VAD, an efficient framework tackling this via two synergistic components. The Prototype Interaction Layer (PIL) provides controlled normality modeling using a small set of learnable prototypes, establishing a robust baseline without being overwhelmed by dominant normal data. The Pseudo-Instance Discriminative Enhancement (PIDE) loss boosts separability by applying targeted contrastive learning exclusively to the most reliable extreme-scoring instances (highest/lowest scores). ProDisc-VAD achieves strong AUCS (97.98% ShanghaiTech, 87.12% UCF-Crime) using only 0.4M parameters, over 800x fewer than recent ViT-based methods like VadCLIP, demonstrating exceptional efficiency alongside state-of-the-art performance. Code is available at https://github.com/modadundun/ProDisc-VAD.
 
-## Framework Overview
-
-The ProDisc-VAD framework processes input video features, first enhancing them via the PIL module which interacts with learnable normal prototypes. These enhanced features are then fed to a classifier (FC layers + Sigmoid) to generate instance anomaly scores. Both the MIL loss and the PIDE auxiliary loss utilize these scores and features for training. PIDE specifically operates on the features corresponding to the highest-scoring (pseudo-anomalous) and lowest-scoring (pseudo-normal) instances identified from the scores, enhancing feature separability through contrastive learning.
+## Framework
 
 [框架.pdf](https://github.com/user-attachments/files/20028254/default.pdf)
-
 
 ## Key Features
 
