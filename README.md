@@ -45,11 +45,11 @@ ProDisc-VAD demonstrates strong performance on standard WS-VAD benchmarks:
 
 
 1.  **Datasets:**
-2.  ShanghaiTech：通过网盘分享的文件：SH_clip_video_features
-链接: https://pan.baidu.com/s/1yqz8ItUn8x5ioZDmQ4lC6A?pwd=tv2x 提取码: tv2x 
+2.  ShanghaiTech：
+https://drive.google.com/drive/folders/1LUQg9J8olBwNqEnymfCEC6CkLsjaBgKO?usp=sharing
 
-3.  UCF-Crime：通过网盘分享的文件：UCFClipFeatures
-链接: https://pan.baidu.com/s/1XMcBbg7ShibjlqgbsXY79w?pwd=v1eq 提取码: v1eq 
+3.  UCF-Crime：
+https://drive.google.com/drive/folders/1B0p22_efg_26-491AAYLWdzLPc5edHSQ?usp=drive_link
 4.  **Directory Structure:**
     * Place the datasets under a root directory (default is `../dataset`, modify via `--dataset_path` in `options.py`).
     * Each dataset directory should contain:
