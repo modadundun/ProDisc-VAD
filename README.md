@@ -82,6 +82,26 @@ Main configuration arguments are defined in `options.py` and can be overridden v
 Run the `main.py` script to start training.
 
 ```bash
+
+
+## Project Structure
+├── dataset/
+│   ├── shanghaitech/
+│   │   ├── test_split_10crop.txt      # ShanghaiTech test set video list 
+│   │   └── train_split_10crop.txt     # ShanghaiTech train set video list 
+│   └── ucf-crime/
+│       ├── test_split_10crop.txt      # UCF-Crime test set video list 
+│       └── train_split_10crop.txt     # UCF-Crime train set video list 
+├── Dataset11_10_10crop_txt_sh.py      # Dataset loader for ShanghaiTech
+├── Dataset11_10_10crop_txt_ucf.py     # Dataset loader for UCF-Crime
+├── eval_10crop_12_28.py               # Evaluation script (calculates AUC)
+├── main.py                            # Main script to run training
+├── options.py                         # Script defining command-line arguments/options
+├── ProDisc_VAD.py                     # Core ProDisc-VAD model implementation (PIL, PIDE)
+├── test.py                            # Script for testing the model
+├── train_icic.py                      # Script defining the training loop and losses
+└── utils.py                           # Utility functions (feature processing, plotting etc.)
+
 # Train on UCF-Crime (modify other arguments as needed)
 python main.py --dataset_name ucf-crime --feature_size 512
 
