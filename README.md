@@ -19,7 +19,7 @@ Weakly-supervised video anomaly detection (WS-VAD) using Multiple Instance Learn
 * **Prototype Interaction Layer (PIL):** Efficiently integrates normality context using a limited set of learnable prototypes and an attention mechanism, balancing normality capture with model simplicity and robustness.
 * **Pseudo-Instance Discriminative Enhancement (PIDE) Loss:** Employs targeted contrastive learning on extreme-scoring instances, leveraging the most reliable pseudo-labels under weak supervision to enhance feature separability and mitigate noise amplification.
 * **Efficiency:** Extremely lightweight model (0.4M parameters) with fast inference speed, offering a great balance between performance and computational cost.
-
+Our codebase mainly refers to AR-net. We greatly appreciate their excellent contribution with nicely organized code!
 ## Results
 
 ProDisc-VAD demonstrates strong performance on standard WS-VAD benchmarks:
