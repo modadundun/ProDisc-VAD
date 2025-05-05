@@ -73,7 +73,6 @@ Main configuration arguments are defined in `options.py` and can be overridden v
 * `--sample_size`: Number of instances sampled per MIL bag (default: 30).
 * `--max_epoch`: Number of training epochs (default: 100).
 * `--model_name`: Name used for saving checkpoints and results (default: 'ProDisc_VAD').
-* `--k`: Value of k for the KMXMILL loss (default: 6).
 * `--device`: GPU ID to use (default: 0).
 * `--pretrained_ckpt`: Optional path to a pretrained model checkpoint.
 
@@ -93,14 +92,14 @@ Run the `main.py` script to start training.
 │   └── ucf-crime/
 │       ├── test_split_10crop.txt      # UCF-Crime test set video list 
 │       └── train_split_10crop.txt     # UCF-Crime train set video list 
-├── Dataset11_10_10crop_txt_sh.py      # Dataset loader for ShanghaiTech
-├── Dataset11_10_10crop_txt_ucf.py     # Dataset loader for UCF-Crime
-├── eval_10crop_12_28.py               # Evaluation script (calculates AUC)
+├── Dataset_sh.py      # Dataset loader for ShanghaiTech
+├── Dataset_ucf.py     # Dataset loader for UCF-Crime
+├── eval.py               # Evaluation script (calculates AUC)
 ├── main.py                            # Main script to run training
 ├── options.py                         # Script defining command-line arguments/options
 ├── ProDisc_VAD.py                     # Core ProDisc-VAD model implementation (PIL, PIDE)
 ├── test.py                            # Script for testing the model
-├── train_icic.py                      # Script defining the training loop and losses
+├── train.py                      # Script defining the training loop and losses
 └── utils.py                           # Utility functions (feature processing, plotting etc.)
 
 # Train on UCF-Crime (modify other arguments as needed)
