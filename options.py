@@ -15,7 +15,7 @@ parser.add_argument('--batch_size', type=int, default=1, help='number of samples
 parser.add_argument('--sample_size', type=int, default=30, help='number of samples in one iteration')  
 parser.add_argument('--sample_step', type=int, default=1, help='')  
 parser.add_argument('--dataset_name', type=str, default='ucf-crime', help='')  
-parser.add_argument('--dataset_path', type=str, default='../dataset', help='path to dir contains anomaly datasets') 
+parser.add_argument('--dataset_path', type=str, default='./dataset', help='path to dir contains anomaly datasets') 
 
 
 parser.add_argument('--max-seqlen', type=int, default=300, help='maximum sequence length during training (default: 750)')  
