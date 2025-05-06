@@ -1,10 +1,10 @@
 from __future__ import print_function
 import os
 import torch
-from Dataset11_10_10crop_txt_ucf import dataset
+from Dataset_ucf import dataset
 from torch.utils.data import DataLoader
 
-from train_icic import train  
+from train import train  
 
 import options 
 import torch.optim as optim
