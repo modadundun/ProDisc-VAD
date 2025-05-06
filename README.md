@@ -107,3 +107,28 @@ python main.py --dataset_name ucf-crime --feature_size 512
 
 # Train on ShanghaiTech (modify other arguments as needed)
 python main.py --dataset_name shanghaitech --feature_size 512
+
+```
+
+## Citation
+
+Thank you very much for your interest in our work! If you find this paper and the accompanying code helpful in your research, we would be truly grateful if you would consider citing our work. Your citation is a great encouragement and support for us to continue our research and development in this area.
+
+**Paper:**
+
+Tao Zhu, Qi Yu, Xinru Dong, Shiyu Li, Yue Liu, Jinlong Jiang, and Lei Shu. (2025). ProDisc-VAD: An Efficient System for Weakly-Supervised Anomaly Detection in Video Surveillance Applications. *arXiv preprint arXiv:2505.02179*.
+
+Available at: [https://arxiv.org/abs/2505.02179](https://arxiv.org/abs/2505.02179)
+
+**BibTeX Entry:**
+
+```bibtex
+@misc{zhu2025prodiscvadefficientweaklysupervisedanomaly,
+      title={ProDisc-VAD: An Efficient System for Weakly-Supervised Anomaly Detection in Video Surveillance Applications}, 
+      author={Tao Zhu and Qi Yu and Xinru Dong and Shiyu Li and Yue Liu and Jinlong Jiang and Lei Shu},
+      year={2025},
+      eprint={2505.02179},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={[https://arxiv.org/abs/2505.02179](https://arxiv.org/abs/2505.02179)},
+}
