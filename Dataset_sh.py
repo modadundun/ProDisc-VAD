@@ -27,7 +27,7 @@ class dataset(Dataset):
 
 
         self.normal_video_train, self.anomaly_video_train = self.p_n_split_dataset(self.video_label_dict,
-                                                                                   self.trainlist)  
+                                                                                self.trainlist)  
 
         self.train = train  
         self.t_max = args.max_seqlen  
@@ -37,7 +37,7 @@ class dataset(Dataset):
         return filelist 
     def pickle_reader(self, file=''):
         with open(file=file, mode='rb') as f:
-             video_label_dict = pickle.load(f)
+            video_label_dict = pickle.load(f)
         return video_label_dict  
 
     def p_n_split_dataset(self, video_label_dict, trainlist):
@@ -60,13 +60,9 @@ class dataset(Dataset):
             anomaly_features = torch.zeros(0)  
             normaly_features = torch.zeros(0)  
 
-
             for a_i, n_i in zip(anomaly_indexs, normaly_indexs):
-
                 anomaly_data_video_name = a_i.replace('\n', '')
                 normaly_data_video_name = n_i.replace('\n', '')  
-
-
 
                 anomaly_feature = np.load(file=os.path.join(self.feature_path, anomaly_data_video_name + '.npy'))  
                 anomaly_feature, r = utils.process_feat_sample(anomaly_feature, self.t_max) 
@@ -104,7 +100,7 @@ if __name__ == "__main__":
     args = options.parser.parse_args() 
     train_dataset = dataset(args=args, train=True)  
     train_loader = DataLoader(dataset=train_dataset, batch_size=1, pin_memory=True,
-                              num_workers=0, shuffle=True)  
+                            num_workers=0, shuffle=True)  
     test_dataset = dataset(args=args, train=False)  
     test_loader = DataLoader(dataset=test_dataset, batch_size=1, pin_memory=True,
-                             num_workers=0, shuffle=False)  
+                            num_workers=0, shuffle=False)  
