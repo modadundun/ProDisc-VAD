@@ -8,13 +8,11 @@ import torch
 
 
 def random_extract(feat, t_max):
-    
     r = np.random.randint(len(feat)-t_max)  
     return feat[r:r+t_max], r  
 
 
 def random_extract_step(feat, t_max, step):
-   
     if len(feat) - step * t_max > 0:
         r = np.random.randint(len(feat) - step * t_max) 
     else:
@@ -23,7 +21,6 @@ def random_extract_step(feat, t_max, step):
 
 
 def random_perturb(feat, length):
-   
     samples = np.arange(length) * len(feat) / length  
     for i in range(length):
         if i < length - 1:
@@ -42,13 +39,12 @@ def random_perturb(feat, length):
 def pad(feat, min_len):
     
     if np.shape(feat)[0] <= min_len:
-       return np.pad(feat, ((0, min_len-np.shape(feat)[0]), (0, 0)), mode='constant', constant_values=0)
+        return np.pad(feat, ((0, min_len-np.shape(feat)[0]), (0, 0)), mode='constant', constant_values=0)
     else:
-       return feat  
+        return feat  
 
 
 def process_feat(feat, length, step):
-   
     if len(feat) > length:
         if step and step > 1:
             features, r = random_extract_step(feat, length, step)  
@@ -61,7 +57,6 @@ def process_feat(feat, length, step):
 
 
 def process_feat_sample(feat, length):
-   
     if len(feat) > length:
             features, samples = random_perturb(feat, length)  
             return features, samples  
@@ -70,7 +65,6 @@ def process_feat_sample(feat, length):
 
 
 def scorebinary(scores=None, threshold=0.5):
-    
     scores_threshold = scores.copy()  
     scores_threshold[scores_threshold < threshold] = 0  
     scores_threshold[scores_threshold >= threshold] = 1  
@@ -78,7 +72,6 @@ def scorebinary(scores=None, threshold=0.5):
 
 
 def fill_context_mask(mask, sizes, v_mask, v_unmask):
-    
     mask.fill_(v_unmask)  
     n_context = mask.size(2) 
     for i, size in enumerate(sizes):  
@@ -88,7 +81,6 @@ def fill_context_mask(mask, sizes, v_mask, v_unmask):
 
 
 def median(attention_logits, args):
-    
     attention_medians = torch.zeros(0).to(args.device)  
     batch_size = attention_logits.shape[0]  
     for i in range(batch_size):  
@@ -105,7 +97,6 @@ def median(attention_logits, args):
 
 
 # def anomap(predict_dict, label_dict, save_path, itr, save_root, zip=False, width=10, height=5):
-
 #     if os.path.exists(os.path.join(save_root, save_path, 'plot')) == 0:  
 #         os.makedirs(os.path.join(save_root, save_path, 'plot')) 
 #     if zip:  
