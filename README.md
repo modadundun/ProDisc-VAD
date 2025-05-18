@@ -33,8 +33,11 @@ ProDisc-VAD demonstrates strong performance on standard WS-VAD benchmarks:
 
 | Method        | Params (G) | Test Time (s) | Model Size (MB) |
 | :------------ | :--------- | :------------ | :-------------- |
+| MIST | 0.003 |0.25 | 48.5 |
+| RTFM | 0.02 |0.14 | 94.3 |
+| S3R | 0.05 |0.16 | 310.7 |
+| VadCLIP | 0.35 |0.27 | 619.1 |
 | ProDisc-VAD | 0.0004 |0.0009 | 1.7 |
-
 ## Dependencies
 
 * Python
