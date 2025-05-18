@@ -7,21 +7,19 @@ import options
 
 args = options.parser.parse_args()
 
-
 def label_smoothing(labels, epsilon=1e-5):
     smooth_labels = (1 - epsilon) * labels + epsilon / labels.size(0)
     return smooth_labels
 
-
 binary_CE_loss = torch.nn.BCELoss(reduction='mean')
 
-
 def KMXMILL_individual(element_logits,
-                       seq_len,
-                       labels,
-                       device,
-                       loss_type='CE',
-                       args=args):
+    seq_len,
+    labels,
+    device,
+    loss_type='CE',
+    args=args
+    ):
     k = np.ceil(seq_len / args.k).astype('int32')
 
     instance_logits = torch.zeros(0).to(device)
@@ -69,7 +67,6 @@ def train(epochs, train_loader, all_test_loader, args, model, optimizer, logger,
         model.train()
         for i, data in enumerate(train_loader):
             itr += 1
-
             # Unpack data
             [anomaly_features_v, normaly_features_v], [anomaly_label, normaly_label]= data
 
@@ -88,7 +85,6 @@ def train(epochs, train_loader, all_test_loader, args, model, optimizer, logger,
             # Compute MIL loss
             ce_loss = KMXMILL_individual(element_logits, seq_len, videolabels, device, loss_type='CE')
 
-
             pide_weight = 5.0
             total_loss = 15*ce_loss + pide_weight * pide_loss
 
@@ -104,5 +100,5 @@ def train(epochs, train_loader, all_test_loader, args, model, optimizer, logger,
                 test_result_dict = test(test_loader, model, device, args)
 
                 eval_p(itr=itr, dataset=args.dataset_name, predict_dict=test_result_dict, logger=logger,
-                       save_path=save_path, plot=args.plot, args=args)
+                    save_path=save_path, plot=args.plot, args=args)
                 model.train()  # Return to training mode

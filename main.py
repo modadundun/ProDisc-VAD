@@ -30,11 +30,11 @@ if __name__ == '__main__':
 
     train_dataset = dataset(args=args, train=True) 
     train_loader = DataLoader(dataset=train_dataset, batch_size=args.batch_size, pin_memory=True,
-                              num_workers=1, shuffle=True) 
+                            num_workers=1, shuffle=True) 
 
     test_dataset = dataset(args=args, train=False)  
     test_loader = DataLoader(dataset=test_dataset, batch_size=10, pin_memory=True,
-                             num_workers=1, shuffle=False) 
+                            num_workers=1, shuffle=False) 
     all_test_loader = [test_loader] 
     if not os.path.exists('./ckpt/' + save_path):
         os.makedirs('./ckpt/' + save_path)

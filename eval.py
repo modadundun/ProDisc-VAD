@@ -19,7 +19,7 @@ def eval_p(itr, dataset, predict_dict, logger, save_path, args, plot=False, zip=
         with open(file=os.path.join(label_dict_path, 'frame_label.pickle'), mode='rb') as f: 
             frame_label_dict = pickle.load(f) 
         with open(file=os.path.join(label_dict_path, 'video_label_10crop.pickle'),
-                  mode='rb') as f: 
+                mode='rb') as f: 
             video_label_dict = pickle.load(f) 
         all_predict_np = np.zeros(0)
         all_label_np = np.zeros(0)  
@@ -50,7 +50,7 @@ def eval_p(itr, dataset, predict_dict, logger, save_path, args, plot=False, zip=
         with open(file=os.path.join(label_dict_path, 'ucf_gt_upgate.pickle'), mode='rb') as f:  
             frame_label_dict = pickle.load(f)  
         with open(file=os.path.join(label_dict_path, 'video_label_10crop.pickle'),
-                  mode='rb') as f: 
+                mode='rb') as f: 
             video_label_dict = pickle.load(f) 
         all_predict_np = np.zeros(0)  
         all_label_np = np.zeros(0) 

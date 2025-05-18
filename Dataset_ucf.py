@@ -24,10 +24,8 @@ class dataset(Dataset):
         self.video_label_dict = self.pickle_reader(
             file=os.path.join(self.dataset_path, self.dataset_name, 'GT', 'video_label_10crop.pickle'))  
 
-
-
         self.normal_video_train, self.anomaly_video_train = self.p_n_split_dataset(self.video_label_dict,
-                                                                                   self.trainlist)  
+                                                                                self.trainlist)  
         self.train = train  
         self.t_max = args.max_seqlen  
     def txt2list(self, txtpath=''):
@@ -63,7 +61,6 @@ class dataset(Dataset):
             normal_features_txts = torch.zeros(0)
 
             for a_i, n_i in zip(anomaly_indexs, normaly_indexs):
-              
                 anomaly_data_video_name = a_i.replace('\n', '')  
                 normaly_data_video_name = n_i.replace('\n', '')  
 
@@ -104,7 +101,7 @@ if __name__ == "__main__":
     train_dataset = dataset(args=args, train=True)  
 
     train_loader = DataLoader(dataset=train_dataset, batch_size=1, pin_memory=True,
-                              num_workers=0, shuffle=True)  
+                            num_workers=0, shuffle=True)  
     test_dataset = dataset(args=args, train=False) 
     test_loader = DataLoader(dataset=test_dataset, batch_size=1, pin_memory=True,
-                             num_workers=0, shuffle=False)  
+                    num_workers=0, shuffle=False)  
