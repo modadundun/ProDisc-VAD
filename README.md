@@ -2,24 +2,23 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-Code-blue?logo=github)](https://github.com/modadundun/ProDisc-VAD)
 
-## Introduction
+## Important Notice: Regarding Preprint Withdrawal and Future Plans
 
-This repository contains the official PyTorch implementation for **ProDisc-VAD**, an efficient framework for **Weakly-Supervised Video Anomaly Detection (WS-VAD)** in surveillance applications. The method addresses the label ambiguity inherent in Multiple Instance Learning (MIL) for WS-VAD, which stems from the sparsity of anomalous events and hinders the learning of discriminative features when only video-level labels are available.
+Dear Visitors and Users,
 
-## Abstract 
+The preprint paper titled "[***]," associated with this code repository and originally available on arXiv (ID: [Your arXiv ID, e.g., 2505.02179]), has been **withdrawn due to conflicts with our ongoing patent application (based on the professional advice of intellectual property legal counsel)**, to avoid potential risks posed by its public disclosure to the patent application.
 
-Weakly-supervised video anomaly detection (WS-VAD) using Multiple Instance Learning (MIL) suffers from label ambiguity, hindering discriminative feature learning. We propose ProDisc-VAD, an efficient framework tackling this via two synergistic components. The Prototype Interaction Layer (PIL) provides controlled normality modeling using a small set of learnable prototypes, establishing a robust baseline without being overwhelmed by dominant normal data. The Pseudo-Instance Discriminative Enhancement (PIDE) loss boosts separability by applying targeted contrastive learning exclusively to the most reliable extreme-scoring instances (highest/lowest scores). ProDisc-VAD achieves strong AUCS (97.98% ShanghaiTech, 87.12% UCF-Crime) using only 0.4M parameters, over 800x fewer than recent ViT-based methods like VadCLIP, demonstrating exceptional efficiency alongside state-of-the-art performance. Code is available at https://github.com/modadundun/ProDisc-VAD.
+Consequently, the abstract and PDF file of the paper previously available in this repository have been removed.
 
-## Framework
+We are currently actively addressing matters related to the patent application. After completing the necessary intellectual property protection steps, **we plan to re-release a revised version of this research or related scholarly work around June 10, 2025.** Please look for updates around that time.
 
-[框架.pdf](https://github.com/user-attachments/files/20028254/default.pdf)
+The codebase within this repository remains available for academic research and reference.
 
-## Key Features
+We apologize for any inconvenience or confusion this may cause and appreciate your understanding and support.
 
-* **Prototype Interaction Layer (PIL):** Efficiently integrates normality context using a limited set of learnable prototypes and an attention mechanism, balancing normality capture with model simplicity and robustness.
-* **Pseudo-Instance Discriminative Enhancement (PIDE) Loss:** Employs targeted contrastive learning on extreme-scoring instances, leveraging the most reliable pseudo-labels under weak supervision to enhance feature separability and mitigate noise amplification.
-* **Efficiency:** Extremely lightweight model (0.4M parameters) with fast inference speed, offering a great balance between performance and computational cost.
+Should you have any questions regarding the code, or wish to be notified when the paper is re-released, please feel free to reach out via GitHub Issues or other established contact methods.
 
+## original README（without paper）
 Our codebase mainly refers to AR-net. We greatly appreciate their excellent contribution with nicely organized code!
 ## Results
 
@@ -119,19 +118,11 @@ Thank you very much for your interest in our work! If you find this paper and th
 
 **Paper:**
 
-Tao Zhu, Qi Yu, Xinru Dong, Shiyu Li, Yue Liu, Jinlong Jiang, and Lei Shu. (2025). ProDisc-VAD: An Efficient System for Weakly-Supervised Anomaly Detection in Video Surveillance Applications. *arXiv preprint arXiv:2505.02179*.
-
-Available at: [https://arxiv.org/abs/2505.02179](https://arxiv.org/abs/2505.02179)
+Available at: [https://arxiv.org/***)
 
 **BibTeX Entry:**
 
 ```bibtex
-@misc{zhu2025prodiscvadefficientweaklysupervisedanomaly,
-      title={ProDisc-VAD: An Efficient System for Weakly-Supervised Anomaly Detection in Video Surveillance Applications}, 
-      author={Tao Zhu and Qi Yu and Xinru Dong and Shiyu Li and Yue Liu and Jinlong Jiang and Lei Shu},
-      year={2025},
-      eprint={2505.02179},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={[https://arxiv.org/abs/2505.02179](https://arxiv.org/abs/2505.02179)},
+@misc{
+      url={[https://arxiv.org/abs/***](https://arxiv.org/abs/***)},
 }
