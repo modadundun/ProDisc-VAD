@@ -1,4 +1,4 @@
-# ProDisc-VAD: An Efficient System for Weakly-Supervised Anomaly Detection in Video Surveillance Applications
+# paper***
 
 [![GitHub](https://img.shields.io/badge/GitHub-Code-blue?logo=github)](https://github.com/modadundun/ProDisc-VAD)
 
@@ -6,7 +6,7 @@
 
 Dear Visitors and Users,
 
-The preprint paper titled "[***]," associated with this code repository and originally available on arXiv (ID: [Your arXiv ID, e.g., 2505.02179]), has been **withdrawn due to conflicts with our ongoing patent application (based on the professional advice of intellectual property legal counsel)**, to avoid potential risks posed by its public disclosure to the patent application.
+The preprint paper titled "[***]," associated with this code repository and originally available on arXiv , has been **withdrawn due to conflicts with our ongoing patent application (based on the professional advice of intellectual property legal counsel)**, to avoid potential risks posed by its public disclosure to the patent application.
 
 Consequently, the abstract and PDF file of the paper previously available in this repository have been removed.
 
