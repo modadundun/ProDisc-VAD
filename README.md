@@ -10,7 +10,7 @@ The preprint paper titled "[***]," associated with this code repository and orig
 
 Consequently, the abstract and PDF file of the paper previously available in this repository have been removed.
 
-We are currently actively addressing matters related to the patent application. After completing the necessary intellectual property protection steps, **we plan to re-release a revised version of this research or related scholarly work around June 10, 2025.** Please look for updates around that time.
+We are currently actively addressing matters related to the patent application. After completing the necessary intellectual property protection steps, **we plan to re-release a revised version of this research or related scholarly work around July 10, 2025.** Please look for updates around that time.
 
 The codebase within this repository remains available for academic research and reference.
 
