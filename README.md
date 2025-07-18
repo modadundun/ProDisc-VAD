@@ -110,6 +110,12 @@ Available at: (https://arxiv.org/abs/2505.02179)
 **BibTeX Entry:**
 
 ```bibtex
-@misc{
-      url={[https://arxiv.org/abs/***](https://arxiv.org/abs/***)},
+@misc{zhu2025prodiscvadefficientweaklysupervisedanomaly,
+      title={ProDisc-VAD: An Efficient System for Weakly-Supervised Anomaly Detection in Video Surveillance Applications}, 
+      author={Tao Zhu and Qi Yu and Xinru Dong and Shiyu Li and Yue Liu and Jinlong Jiang and Lei Shu},
+      year={2025},
+      eprint={2505.02179},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.02179}, 
 }
