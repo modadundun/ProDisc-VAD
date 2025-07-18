@@ -105,7 +105,7 @@ Thank you very much for your interest in our work! If you find this paper and th
 
 **Paper:**
 
-Available at: [https://arxiv.org/***)
+Available at: (https://arxiv.org/abs/2505.02179)
 
 **BibTeX Entry:**
 
