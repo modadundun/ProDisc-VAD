@@ -7,9 +7,6 @@ This repository contains the official PyTorch implementation for our paper: **Pr
 
 Our codebase mainly refers to [AR-Net](https://github.com/kchengiva/AR-Net). We greatly appreciate their excellent contribution with nicely organized code!
 
-
-## original README（without paper）
-Our codebase mainly refers to AR-net. We greatly appreciate their excellent contribution with nicely organized code!
 ## Results
 
 ProDisc-VAD demonstrates strong performance on standard WS-VAD benchmarks:
