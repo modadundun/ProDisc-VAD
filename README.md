@@ -1,22 +1,12 @@
-# paper***
+# ProDisc-VAD: An Efficient System for Weakly-Supervised Anomaly Detection in Video Surveillance Applications
 
+[![arXiv](https://img.shields.io/badge/arXiv-2505.02179-b31b1b.svg)](https://arxiv.org/abs/2505.02179)
 [![GitHub](https://img.shields.io/badge/GitHub-Code-blue?logo=github)](https://github.com/modadundun/ProDisc-VAD)
 
-## Important Notice: Regarding Preprint Withdrawal and Future Plans
+This repository contains the official PyTorch implementation for our paper: **ProDisc-VAD: An Efficient System for Weakly-Supervised Anomaly Detection in Video Surveillance Applications**.
 
-Dear Visitors and Users,
+Our codebase mainly refers to [AR-Net](https://github.com/kchengiva/AR-Net). We greatly appreciate their excellent contribution with nicely organized code!
 
-The preprint paper titled "[***]," associated with this code repository and originally available on arXiv , has been **withdrawn due to conflicts with our ongoing patent application (based on the professional advice of intellectual property legal counsel)**, to avoid potential risks posed by its public disclosure to the patent application.
-
-Consequently, the abstract and PDF file of the paper previously available in this repository have been removed.
-
-We are currently actively addressing matters related to the patent application. After completing the necessary intellectual property protection steps, **we plan to re-release a revised version of this research or related scholarly work around July 10, 2025.** Please look for updates around that time.
-
-The codebase within this repository remains available for academic research and reference.
-
-We apologize for any inconvenience or confusion this may cause and appreciate your understanding and support.
-
-Should you have any questions regarding the code, or wish to be notified when the paper is re-released, please feel free to reach out via GitHub Issues or other established contact methods.
 
 ## original README（without paper）
 Our codebase mainly refers to AR-net. We greatly appreciate their excellent contribution with nicely organized code!
